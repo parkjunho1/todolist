@@ -22,10 +22,10 @@
                         <a class="nav-link" href="http://127.0.0.1/" style="text-align:center;">홈</a>
                     </div>
                     <div class="col-md-1 col-sm-2 col-xs-1 ">
-                        <a class="nav-link" href="#" data-toggle="modal" data-target="#firefoxModal" style="text-align:center;">회원가입</a>
+                        <a class="nav-link" href="http://127.0.0.1/" style="text-align:center;">회원가입</a>
                     </div>
                     <div class="col-md-1 col-sm-2 col-xs-1">
-                        <a class="nav-link" href="#" style="text-align:center;">로그인</a>
+                        <a class="nav-link" href="../login.php" style="text-align:center;">로그인</a>
                     </div>
                 </div>
             </div>

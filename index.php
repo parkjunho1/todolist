@@ -9,25 +9,36 @@
     } else {
 ?>
     <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4 " style="border: 1px solid;padding-top: 10px;padding-bottom: 10px;">
+        <div class="col-md-4 col-sm-4"></div>
+        <div class="col-md-4 col-sm-4" style="border: 1px solid;padding-left: 30px;padding-right: 30px; padding-top: 20px;padding-bottom: 20px;">
             <form id="form01" name="form01">
                 <div class="panel-body">
-                    <div class="form-group" id="weight2" name="weight2">
+                    <div class="form-group">
                         <div class="row">
-                            <div class="col-md-2">이름 :</div>
+                            <div class="col-md-3 col-sm-8">이름:</div>
                             <div class="col-md-7">
-                                <input type="text" class="form-control" placeholder="무게" id="weight" name="weight">
+                                <input type="text" class="form-control" id="name" name="name">
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-5 control-label">금액 :</label>
-                        <div class="col-md-7">
-                            <input type="text" class="form-control" placeholder="금액" id="money01" name="money01">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-8">아이디:</div>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" id="id" name="id">
+                            </div>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary pull-right" onclick="foodins()" id="ok" name="ok">등록</button>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-8">패스워드:</div>
+                            <div class="col-md-7">
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="create()" id="create" name="create">등록</button>
+                    <button type="button" class="btn btn-primary" onclick="reset()" id="reset" name="reset">리셋</button>
                 </div>
             </form>
         </div>
@@ -40,30 +51,6 @@
     }
 ?>
 
-<div class="modal fade" id="firefoxModal" tabindex="-1" role="dialog" aria-labelledby="firefoxModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <ol>
-                    <li>Ensure you're using Firefox.</li>
-                    <li>Open a new tab and then switch back to this tab.</li>
-                    <li>Click into this input: <input type="text" id="ff-bug-input"></li>
-                    <li>Switch to the other tab and then back to this tab.</li>
-                </ol>
-                <p>Test result: <strong id="ff-bug-test-result"></strong></p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
-                <button type="button" class="btn btn-primary">가입</button>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <? include $_SERVER["DOCUMENT_ROOT"] . "/layout/footer.php";?>
